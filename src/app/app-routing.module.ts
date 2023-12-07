@@ -35,7 +35,7 @@ const routes: Routes = [
     component: NicosiaComponent,
   },
   {
-    path: 'nicosia',
+    path: 'nicosia/:proyecto',
     component: NicosiaComponent,
   },
 ];

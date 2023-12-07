@@ -1,7 +1,14 @@
-<h2>Residencial Nicosia, Madrid</h2>
+<h2>{{ titulo }}</h2>
 <div class="proyecto-container">
   <div class="descripcion-container">
-    <img src="../../../../assets/nicosia/cam2.jpg" alt="fachada posterior" />
+    <!-- <img
+      src="../../../../assets/'{{ rutaFoto }}'/cam2.jpg"
+      alt="fachada posterior"
+    /> -->
+    <img
+      src="{{ '../../../../assets/' + rutaFoto + '/cam2.jpg' }}"
+      alt="fachada posterior"
+    />
 
     <ul>
       <li>
