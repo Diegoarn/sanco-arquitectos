@@ -1,0 +1,217 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 100%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: rgb(95, 95, 95);
+  margin-left: 2%;
+}
+
+.line {
+  height: 1px;
+  width: 60%;
+  background-color: red;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px 48px;
+  width: 100%;
+}
+
+.card2-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px 48px;
+  width: 100%;
+}
+img {
+  width: 340x;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border: 1px solid rgb(172, 172, 172);
+}
+
+p {
+  font-size: 400;
+  font-size: 0, 9rem;
+  color: rgb(109, 109, 109);
+  margin-left: 8px;
+}
+
+.card {
+  cursor: pointer;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.card:hover {
+  /* transform: scale3d(1.1, 1.1, 1); */
+  box-shadow: 0 8px 8px 0 #dbdada, 0 8px 8px 0 #9e9e9e;
+
+  transform: scale(102%);
+  transition: transform 0.2s ease-in-out;
+  filter: grayscale(60%);
+}
+
+.return {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+  gap: 16px;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+
+.return img {
+  width: 3%;
+  height: auto;
+  border: 0px;
+  opacity: 70%;
+}
+
+.return a {
+  text-decoration: none;
+  font-size: 400;
+  font-size: 1.9rem;
+  color: rgb(109, 109, 109);
+}
+
+.return:hover {
+  transform: translatex(-10px);
+  -webkit-transform: translatex(-10px);
+  -moz-transform: translatex(-10px);
+}
+
+/* .card1 {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.card1:hover {
+  box-shadow: 0 8px 8px 0 #cccccc, 0 8px 8px 0 #c5c5c5;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+  filter: grayscale(80%);
+
+  transform: scale3d(1.1, 1.1, 1);
+  transition: transform 2s ease-in-out;
+} */
+
+.card2-container {
+  width: 300px;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  transform: translatey(-100px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2,
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}

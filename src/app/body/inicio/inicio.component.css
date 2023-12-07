@@ -1,0 +1,140 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+.texto-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #262626;
+}
+
+.texto-container p {
+  font-weight: 200;
+  font-size: 18px;
+  width: 50%;
+  color: #f6f5f6;
+}
+.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 100px solid rgb(156, 156, 156);
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  align-self: flex-start;
+}
+
+.triangulo-gris {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid rgb(156, 156, 156);
+  border-top: 100px solid transparent;
+  align-self: flex-end;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2%;
+  margin-top: 8%;
+  margin-bottom: 4%;
+  width: 67%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: rgb(95, 95, 95);
+  margin-left: 1%;
+}
+
+.line {
+  height: 1px;
+  width: 68%;
+  background-color: red;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px 48px;
+  width: 80%;
+}
+
+.card {
+  cursor: pointer;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  text-decoration: none;
+}
+
+.card img {
+  width: 410x;
+  height: 235px;
+  overflow: hidden;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border: 1px solid rgb(172, 172, 172);
+}
+
+p {
+  font-size: 400;
+  font-size: 0, 9rem;
+  color: rgb(109, 109, 109);
+  margin-left: 8px;
+}
+
+.card:hover {
+  /* transform: scale3d(1.1, 1.1, 1); */
+  box-shadow: 0 8px 8px 0 #dbdada, 0 8px 8px 0 #9e9e9e;
+
+  transform: scale(103%);
+  transition: transform 0.4s ease-in-out;
+  filter: grayscale(60%);
+}
+
+.return {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+  gap: 16px;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+
+.return img {
+  width: 3%;
+  height: auto;
+  border: 0px;
+  opacity: 70%;
+}
+
+.return a {
+  text-decoration: none;
+  font-size: 400;
+  font-size: 1.9rem;
+  color: rgb(109, 109, 109);
+}
+
+.return:hover {
+  transform: translatex(-10px);
+  -webkit-transform: translatex(-10px);
+  -moz-transform: translatex(-10px);
+}
