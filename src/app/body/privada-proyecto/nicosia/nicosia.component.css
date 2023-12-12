@@ -44,3 +44,36 @@ li {
 .imagenes-container img {
   width: 30%;
 }
+
+.return {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+  gap: 16px;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+
+.return img {
+  width: 3%;
+  height: auto;
+  border: 0px;
+  opacity: 70%;
+}
+
+.return a {
+  text-decoration: none;
+  font-size: 400;
+  font-size: 1.9rem;
+  color: rgb(109, 109, 109);
+}
+
+.return:hover {
+  transform: translatex(-10px);
+  -webkit-transform: translatex(-10px);
+  -moz-transform: translatex(-10px);
+}
