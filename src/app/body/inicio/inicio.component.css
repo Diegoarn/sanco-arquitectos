@@ -49,20 +49,20 @@ img {
   justify-content: flex-start;
   gap: 2%;
   margin-top: 8%;
-  margin-bottom: 8%;
+  margin-bottom: 5%;
   width: 72%;
 }
 
 .title {
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: rgb(95, 95, 95);
   margin-left: 1%;
 }
 
 .line {
   height: 1px;
-  width: 68%;
+  width: 72%;
   background-color: red;
 }
 
