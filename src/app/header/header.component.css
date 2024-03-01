@@ -4,9 +4,12 @@
   flex-direction: row;
   /* justify-content: space-between; */
   align-items: center;
-  padding-top: 2%;
+  padding-top: 3%;
   padding-bottom: 2%;
   height: auto;
+  z-index: 1;
+  position: relative;
+
 }
 .logo-container {
   display: flex;
