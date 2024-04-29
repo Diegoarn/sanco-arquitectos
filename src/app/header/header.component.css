@@ -77,7 +77,7 @@
   background-color: #d3d3d3;
 }
 
-/*Muestra el menu cuando se hace hover*/
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -111,4 +111,29 @@
 #underline:hover:after {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+@media screen and (max-width: 760px) {
+  .header-container {
+    flex-direction: column;
+    align-content: center;
+ 
+  }
+
+  .logo-container {
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+  
+    width: 80%;
+  }
+
+  .menu-container {
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 50%;
+    margin-right: 8%;
+  }
+  
 }

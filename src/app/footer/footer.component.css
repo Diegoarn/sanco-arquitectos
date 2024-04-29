@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: #262626;
-  height: 132px;
+  height: 10rem;
   margin-top: 16%;
   border-top: 8px solid #454545;
 }
@@ -14,4 +14,12 @@
   color: #e7e6e7;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+}
+@media screen and (max-width: 760px) {
+
+
+  .footer-container {
+    flex-direction: column;
+    align-content: center;
+  }
 }
